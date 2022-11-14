@@ -67,4 +67,71 @@ h1 {
   width: 160px;
   border-radius: 5px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1607843137);
+  font-size: 14px;
+}
+
+main {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+/* FIRST SECTION */
+.f-section {
+  display: flex;
+  color: #888888;
+  margin-bottom: 80px;
+}
+.f-section .div1 {
+  width: 56%;
+  margin-right: 60px;
+}
+.f-section .div1 h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.f-section .div1 p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.f-section .div1 p:first-of-type {
+  margin-bottom: 20px;
+}
+.f-section .div2 {
+  width: 30%;
+}
+.f-section .div2 label {
+  display: block;
+  font-size: 12px;
+}
+.f-section .div2 input {
+  width: 340px;
+  height: 30px;
+  margin: 12px 0;
+  outline: none;
+}
+.f-section .div2 div {
+  margin-top: 20px;
+}
+.f-section .div2 div label {
+  display: inline-flex;
+  margin-right: 40px;
+}
+.f-section .div2 div input {
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-right: 5px;
+}
+.f-section .div2 button {
+  width: 340px;
+  height: 39px;
+  color: #888888;
+  background: #fff;
+  border: 1px solid #707070;
+  margin-top: 23px;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
