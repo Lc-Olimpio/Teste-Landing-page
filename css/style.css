@@ -6,6 +6,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  color: #888888;
 }
 
 /* HEADER */
@@ -60,7 +61,6 @@ h1 {
 }
 .navbar li a {
   text-decoration: none;
-  color: #888888;
   background: #fff;
   display: block;
   padding: 11px;
@@ -78,7 +78,6 @@ main {
 /* FIRST SECTION */
 .f-section {
   display: flex;
-  color: #888888;
   margin-bottom: 80px;
 }
 .f-section .div1 {
@@ -129,9 +128,119 @@ main {
   color: #888888;
   background: #fff;
   border: 1px solid #707070;
+  border-radius: 5px;
   margin-top: 23px;
 }
 
 .clickable:hover {
   cursor: pointer;
+  color: #fff;
+  background: #808080;
+}
+
+/* SECOND SECTION */
+.s-section {
+  margin-bottom: 100px;
+}
+.s-section h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #707070;
+  line-height: 0.1px;
+  margin: 10px 0 55px;
+  font-size: 18px;
+}
+.s-section h2 span {
+  background: #fff;
+  padding: 0 17px;
+}
+
+.productWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "product0 product1 product2 product3" "product4 product5 product6 product7";
+  gap: 40px;
+  margin-bottom: 55px;
+}
+
+.product .imgDiv {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #707070;
+  margin-bottom: 14px;
+}
+.product h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.product p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.product span {
+  display: block;
+  font-size: 16px;
+}
+.product span:first-of-type {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.product span:last-of-type {
+  font-size: 12px;
+  margin: 7px 0 10px;
+}
+.product button {
+  width: 200px;
+  height: 30px;
+  color: #888888;
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+
+.product0 {
+  grid-area: product0;
+}
+
+.product1 {
+  grid-area: product1;
+}
+
+.product2 {
+  grid-area: product2;
+}
+
+.product3 {
+  grid-area: product3;
+}
+
+.product4 {
+  grid-area: product4;
+}
+
+.product5 {
+  grid-area: product5;
+}
+
+.product6 {
+  grid-area: product6;
+}
+
+.product7 {
+  grid-area: product7;
+}
+
+.moreProducts {
+  width: 100%;
+  text-align: center;
+}
+.moreProducts a {
+  padding: 8px 25px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #888888;
 }/*# sourceMappingURL=style.css.map */

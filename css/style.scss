@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: Helvetica, Arial , sans-serif
+  font-family: Helvetica, Arial , sans-serif;
+  color: #888888;
 }
 
 /* HEADER */
@@ -61,7 +62,6 @@ h1 {
 
     a {
       text-decoration: none;
-      color: #888888;
       background: #fff ;
       display: block;
       padding: 11px;
@@ -82,7 +82,6 @@ main {
 
 .f-section {
   display: flex;
-  color: #888888;
   margin-bottom: 80px;
 
   .div1 {
@@ -143,7 +142,9 @@ main {
       color: #888888;
       background: #fff;
       border: 1px solid #707070;
+      border-radius: 5px;
       margin-top: 23px;
+
     }
   }
 }
@@ -151,6 +152,126 @@ main {
 .clickable {
   &:hover {
     cursor: pointer;
+    color: #fff;
+    background: #808080;
   }
+}
+
+/* SECOND SECTION */
+
+.s-section {
+
+  margin-bottom: 100px;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #707070; 
+    line-height: 0.1px;
+    margin: 10px 0 55px;
+    font-size: 18px;
+
+    span {
+      background: #fff;
+      padding: 0 17px;
+    }
+  }
+}
+
+.productWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+     "product0 product1 product2 product3"
+     "product4 product5 product6 product7"
+  ;
+  gap: 40px;
+  margin-bottom: 55px;
+}
+
+.product {
+
+  .imgDiv {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #707070;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    display: block;
+    font-size: 16px;
+
+    &:first-of-type {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    &:last-of-type {
+      font-size: 12px;
+      margin: 7px 0 10px;
+    }
+  }
+
+  button {
+    width: 200px;
+    height: 30px;
+    color: #888888;
+    background: #fff;
+    border: 1px solid #707070;
+    border-radius: 5px;
+  }
+}
+
+.product0 {
+  grid-area: product0;
+}
+.product1 {
+  grid-area: product1;
+}
+.product2 {
+  grid-area: product2;
+}
+.product3 {
+  grid-area: product3;
+}
+.product4 {
+  grid-area: product4;
+}
+.product5 {
+  grid-area: product5;
+}
+.product6 {
+  grid-area: product6;
+}
+.product7 {
+  grid-area: product7;
+}
+
+.moreProducts {
+  width: 100%;
+  text-align: center;
+
+  a{
+    padding: 8px 25px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #888888;
+  }
+  
 }
 
