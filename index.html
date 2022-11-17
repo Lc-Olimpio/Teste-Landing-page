@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
-  <title>Tete Landing page</title>
+  <title>Teste Landing page</title>
 </head>
 <body>
 
-  <header class="header skewd-bg">
-    <div class="container">
+  <header class="header header-skewd-bg">
+    <div class="header-container">
       <div class="initial-text-div">
         <span>uma seleção de produtos</span>
         <h1>especial para você</h1>
@@ -22,16 +22,16 @@
       
       <nav class="navbar">
         <ul>
-          <li><a href="#">Conheça a Linx</a></li>
-          <li><a href="#">Ajude o algorítimo</a></li>
-          <li><a href="#">Seus produtos</a></li>
-          <li><a href="#">Compartilhe</a></li>
+          <li><a class="clickable-button" href="#">Conheça a Linx</a></li>
+          <li><a class="clickable-button" href="#helpTheAlgorithm">Ajude o algorítimo</a></li>
+          <li><a class="clickable-button" href="#yourProducts">Seus produtos</a></li>
+          <li><a class="clickable-button" href="#share">Compartilhe</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <section id="helpTheAlgorithm" class="f-section">
       <div class="div1">
         <h2>Ajude o algorítimo a ser mais certeiro</h2>
@@ -44,29 +44,29 @@
       </div>
 
       <div class="div2">
-        <form>
+        <form class="inputnlabelstyle">
           <label for="name">Seu nome:</label>
           <input type="text" name="name" id="name">
          
-          <label for="name">E-mail:</label>
-          <input type="text" name="E-mail" id="name">
+          <label for="email">E-mail:</label>
+          <input type="text" name="E-mail" id="email">
 
-          <label for="name">CPF:</label>
-          <input type="text" name="CPF" id="name">
+          <label for="cpf">CPF:</label>
+          <input type="text" name="CPF" id="cpf">
 
           <div>
-            <label class="clickable"><input class="clickable" type="radio" name="gender" value="male">Masculino</label>
-            <label class="clickable"><input class="clickable" type="radio" name="gender" value="female">Feminino</label>
+            <label><input type="radio" name="gender" value="male">Masculino</label>
+            <label><input type="radio" name="gender" value="female">Feminino</label>
           </div>
 
-          <button class="clickable">Enviar</button>
+          <button>Enviar</button>
         </form>
       </div>
     </section>
 
     <section id="yourProducts" class="s-section">
 
-    <h2><span>Sua seleção especial</span></h2>
+    <h2 class="section-title"><span>Sua seleção especial</span></h2>
 
     <div class="productWrapper">
 
@@ -80,7 +80,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product1">
@@ -93,7 +93,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product2">
@@ -106,7 +106,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product3">
@@ -119,7 +119,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product4">
@@ -132,7 +132,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product5">
@@ -145,7 +145,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product6">
@@ -158,7 +158,7 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
 
       <div class="product product7">
@@ -171,32 +171,40 @@
         <span>De: R$23,99</span>
         <span><b>Por: R$19,99</b></span>
         <span>ou 2x de R$9,99</span>
-        <button class="clickable">Comprar</button>
+        <button class="clickable-button">Comprar</button>
       </div>
     </div>
     <div class="moreProducts">
-      <a href="#">Ainda mais produtos aqui!</a>
+      <a class="clickable-button" href="#">Ainda mais produtos aqui!</a>
     </div>
     </section>
 
-    <section id="share">
-      <h2><span>Compartilhe a novidade</span></h2>
+    <section id="share" class="t-section">
+      <h2 class="section-title"><span>Compartilhe a novidade</span></h2>
       <p>
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
       </p>
 
-      <label for="">Nome do seu amigo:</label>
-      <input type="text">
+      <div class="inputnlabelstyle TSectionInputs">
+        <form action="">
+          <div>
+            <label for="friendName">Nome do seu amigo:</label>
+            <input type="text" name="friendname" id="friendName">
+          </div>
 
-      <label for="">E-mail:</label>
-      <input type="text">
-
-      <button>Enviar agora</button>
+          <div>
+            <label for="friendEmail">E-mail:</label>
+            <input type="text" name="friendEmail" id="friendEmail">
+          </div>
+       </form>
+      </div>
+      <button class="clickable-button">Enviar agora</button>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer footer-skewd-bg">
     <p>Testando suas habilidades em HTML, CSS e JS. <br> Linx Impulse <br> 2019</p>
+      
   </footer>
 </body>
 </html>
