@@ -269,7 +269,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-.TSectionInputs form {
+.TSectionInputs .shareFormDiv {
   margin: auto;
   width: 720px;
   display: flex;
@@ -376,7 +376,7 @@ button {
   .inputnlabelstyle input {
     width: 100%;
   }
-  .TSectionInputs form {
+  .TSectionInputs .shareFormDiv {
     width: 90%;
     flex-direction: column;
   }
@@ -437,5 +437,18 @@ button {
   }
   .footer p {
     margin-top: 110px;
+  }
+}
+@media (max-width: 400px) {
+  .navbar ul {
+    min-width: 320px;
+  }
+  .navbar ul li {
+    margin: 0 10px;
+    margin-bottom: 10px;
+  }
+  .navbar ul li a {
+    width: 140px;
+    margin: 10 0px;
   }
 }/*# sourceMappingURL=style.css.map */

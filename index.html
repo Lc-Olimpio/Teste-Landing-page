@@ -47,7 +47,7 @@
       </div>
 
       <div class="div2">
-        <form class="inputnlabelstyle">
+        <form class="inputnlabelstyle" name="firstForm">
           <label for="name">Seu nome:</label>
           <input type="text" name="name" id="name">
          
@@ -206,24 +206,30 @@
       </p>
 
       <div class="TSectionInputs">
-        <form class="inputnlabelstyle" action="">
-          <div>
-            <label for="friendName">Nome do seu amigo:</label>
-            <input type="text" name="friendname" id="friendName">
+        <form action="">
+          <div class="inputnlabelstyle shareFormDiv">
+            <div>
+              <label for="friendName">Nome do seu amigo:</label>
+              <input type="text" name="friendname" id="friendName">
+            </div>
+
+            <div>
+              <label for="friendEmail">E-mail:</label>
+              <input type="text" name="friendEmail" id="friendEmail">
+            </div>
           </div>
 
-          <div>
-            <label for="friendEmail">E-mail:</label>
-            <input type="text" name="friendEmail" id="friendEmail">
-          </div>
+          <button class="clickable-button">Enviar agora</button>
        </form>
       </div>
-      <button class="clickable-button">Enviar agora</button>
+      
     </section>
   </main>
 
   <footer class="footer">
     <p>Testando suas habilidades em HTML, CSS e JS. <br> Linx Impulse <br> 2019</p>  
   </footer>
+
+  <script src="script/script.js"></script>
 </body>
 </html>

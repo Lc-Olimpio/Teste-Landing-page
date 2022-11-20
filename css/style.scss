@@ -308,7 +308,7 @@ h1 {
 
 .TSectionInputs{
 
-  form{
+  .shareFormDiv{
     margin: auto;
     width: 720px;
     display: flex;
@@ -454,7 +454,7 @@ button {
 
   .TSectionInputs {
 
-    form {
+    .shareFormDiv {
       width: 90%;
       flex-direction: column;
     }
@@ -536,6 +536,26 @@ button {
 
     p {
       margin-top: 110px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .navbar {
+
+    ul {
+      min-width: 320px;
+      
+      li {
+        margin: 0 10px;
+        margin-bottom: 10px;
+
+        a {
+          width: 140px;
+          margin: 10 0px;
+        }
+      }
     }
   }
 }
