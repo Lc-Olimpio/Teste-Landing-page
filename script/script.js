@@ -28,7 +28,26 @@ const Main = {
 
     inputCheck : function(e) {
       e.preventDefault()
-      console.log('Ok')
+
+      let form1 = document.forms[0]
+      let nameInput = form1.name
+      let emailInput = form1.email
+      let cpfInput= form1.cpf
+
+      console.log(nameInput)
+      console.log(emailInput)
+      console.log(cpfInput)
+      
+      if (nameInput.value == ''){
+        console.log(this)
+        this.inputError() // Como seria se o this funcionasse como funciona no 'Main'
+
+        /* Meu objetivo era fazer uma função separada para adicionar as classes de "erro" porém eu não sei como navegar até essa função aqui de baixo 'inputError' já que o 'this' não é o Events aqui.*/
+      }
+    },
+
+    inputError : function() {
+      // funcão que colocaria as clases de erros nos inputs.
     }
 
   }
