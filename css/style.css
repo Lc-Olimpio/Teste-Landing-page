@@ -144,6 +144,7 @@ h1 {
   width: 340px;
   height: 30px;
   margin: 12px 0;
+  padding: 0 12px;
   outline: none;
   border: 1px solid #707070;
 }
@@ -311,6 +312,12 @@ button {
   font-size: 12px;
 }
 
+/* JS classes */
+.inputError {
+  border: 2px solid red;
+  background: rgb(242, 105, 105);
+}
+
 /*MOBILE ADAPTATIONS*/
 @media (max-width: 980px) {
   .f-section {
@@ -439,7 +446,7 @@ button {
     margin-top: 110px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 400px) { /* */
   .navbar ul {
     min-width: 320px;
   }

@@ -47,19 +47,19 @@
       </div>
 
       <div class="div2">
-        <form class="inputnlabelstyle" name="firstForm">
+        <form class="inputnlabelstyle" name="firstForm" action="#">
           <label for="name">Seu nome:</label>
           <input type="text" name="name" id="name">
          
           <label for="email">E-mail:</label>
-          <input type="text" name="E-mail" id="email">
+          <input type="email" name="E-mail" id="email">
 
           <label for="cpf">CPF:</label>
-          <input type="text" name="CPF" id="cpf">
+          <input type="text" name="CPF" id="cpf" maxlength="11" minlength="11">
 
           <div>
-            <label><input type="radio" name="gender" value="male">Masculino</label>
-            <label><input type="radio" name="gender" value="female">Feminino</label>
+            <label><input id="male" type="radio" name="gender" value="male">Masculino</label>
+            <label><input id="female" type="radio" name="gender" value="female">Feminino</label>
           </div>
 
           <button>Enviar</button>
@@ -206,16 +206,16 @@
       </p>
 
       <div class="TSectionInputs">
-        <form action="">
+        <form action="#">
           <div class="inputnlabelstyle shareFormDiv">
             <div>
               <label for="friendName">Nome do seu amigo:</label>
-              <input type="text" name="friendname" id="friendName">
+              <input type="text" name="name" id="friendName">
             </div>
 
             <div>
               <label for="friendEmail">E-mail:</label>
-              <input type="text" name="friendEmail" id="friendEmail">
+              <input type="email" name="email" id="friendEmail">
             </div>
           </div>
 
