@@ -182,10 +182,9 @@ h1 {
   margin-bottom: 55px;
 }
 
-.product .imgDiv {
-  width: 200px;
-  height: 150px;
-  border: 1px solid #707070;
+.product img {
+  width: auto;
+  height: auto;
   margin-bottom: 14px;
 }
 .product h3 {
@@ -209,11 +208,13 @@ h1 {
   font-size: 12px;
   margin: 7px 0 10px;
 }
-.product button {
-  width: 200px;
-  height: 30px;
+.product a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  padding: 9px;
   color: #888888;
-  background: #fff;
   border: 1px solid #707070;
   border-radius: 5px;
 }
@@ -277,12 +278,7 @@ h1 {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
-label {
-  font-size: 14px;
-}
-
-button {
+.TSectionInputs button {
   display: block;
   margin: 0 auto;
   width: 260px;
@@ -291,6 +287,10 @@ button {
   border-radius: 5px;
   color: #888888;
   background: #fff;
+}
+
+label {
+  font-size: 14px;
 }
 
 /*FOOTER*/
@@ -314,8 +314,15 @@ button {
 
 /* JS classes */
 .inputError {
-  border: 2px solid red;
-  background: rgb(242, 105, 105);
+  background: rgb(251, 162, 162);
+}
+
+.sentData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*MOBILE ADAPTATIONS*/
@@ -417,20 +424,18 @@ button {
     display: flex;
     align-items: end;
   }
-  .product .imgDiv {
+  .product img {
     margin: 0;
     margin-right: 23px;
-    width: 169px;
-    height: 129px;
   }
   .productInfo {
     text-align: left;
-    width: 50%;
+    width: 100%;
   }
   .productInfo p {
     display: none;
   }
-  .productInfo button {
+  .productInfo a {
     width: 100%;
   }
   .mobileHide {

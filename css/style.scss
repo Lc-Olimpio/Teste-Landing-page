@@ -214,10 +214,9 @@ h1 {
 
 .product {
 
-  .imgDiv {
-    width: 200px;
-    height: 150px;
-    border: 1px solid #707070;
+  img {
+    width: auto;
+    height: auto;
     margin-bottom: 14px;
   }
 
@@ -247,11 +246,13 @@ h1 {
     }
   }
 
-  button {
-    width: 200px;
-    height: 30px;
+  a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding: 9px;
     color: #888888;
-    background: #fff;
     border: 1px solid #707070;
     border-radius: 5px;
   }
@@ -316,22 +317,24 @@ h1 {
     justify-content: space-between;
     margin-bottom: 50px;
   }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 39px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color: #888888;
+    background: #fff;
+  }
 }
 
 label {
   font-size: 14px;
 }
 
-button {
-  display: block;
-  margin: 0 auto;
-  width: 260px;
-  height: 39px;
-  border: 1px solid #707070;
-  border-radius: 5px;
-  color: #888888;
-  background: #fff;
-}
+
 
 /*FOOTER*/
 
@@ -355,10 +358,15 @@ button {
 
 /* JS classes */
 .inputError {
-  border: 2px solid red;
-  background: rgb(242, 105, 105);
+  background: rgb(251, 162, 162);
 }
-
+.sentData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
 
 /*MOBILE ADAPTATIONS*/
 
@@ -511,23 +519,21 @@ button {
     display: flex;
     align-items: end;
 
-    .imgDiv {
+    img {
       margin: 0;
       margin-right: 23px;
-      width: 169px;
-      height: 129px;
     }
   }
 
   .productInfo {
     text-align: left;
-    width: 50%;
+    width: 100%;
 
     p {
       display: none;
     }
 
-    button {
+    a {
       width: 100%;
     }
   }
