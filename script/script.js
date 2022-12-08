@@ -163,12 +163,11 @@ const Main = {
          
       let productDetails = dados.products
       let productWrapper = document.querySelector('.productWrapper')
-      let moreProductsButton = document.querySelector('.moreProductsButton')
       
       for (let count = 0; count <= 3; count ++){
         productWrapper.innerHTML += 
         `
-          <div class="product product${count}">
+          <div class="product">
           <img src="${productDetails[count].image}" alt="product Image">   
             <div class="productInfo">
               <h3>${productDetails[count].name}</h3>
@@ -184,12 +183,10 @@ const Main = {
         `
       }
 
-      for (let count = 4; count <= 7; count ++){ 
-        /* Adiciona os produtos com a classe 'mobileHide' para que na versão mobile só apareçamos 4 primeiros produtos*/
-        
+      for (let count = 0; count <= 3; count ++){
         productWrapper.innerHTML += 
         `
-        <div class="product product${count} mobileHide">
+          <div class="product mobileHide">
           <img src="${productDetails[count].image}" alt="product Image">   
             <div class="productInfo">
               <h3>${productDetails[count].name}</h3>
