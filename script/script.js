@@ -157,7 +157,7 @@ const fetchRequests = {
       productWrapper.innerHTML += 
       `
         <div class="product">
-        <img src="http:${productDetails[count].image}" alt="product Image">   
+        <img src="https:${productDetails[count].image}" alt="product Image">   
           <div class="productInfo">
             <h3>${productDetails[count].name}</h3>
             <p>
@@ -176,7 +176,7 @@ const fetchRequests = {
       productWrapper.innerHTML += 
       `
         <div class="product mobileHide">
-        <img src="http:${productDetails[count].image}" alt="product Image">   
+        <img src="https:${productDetails[count].image}" alt="product Image">   
           <div class="productInfo">
             <h3>${productDetails[count].name}</h3>
             <p>
