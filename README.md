@@ -2,7 +2,7 @@
 
 Essa é uma solução para o [teste de vaga de emprego](https://github.com/thiagocontaparatestes/testes-vaga-emprego/blob/main/teste-html-css-js.md) do curso [formação full stack Javascript](https://thiago-medeiros.com/v2/?ref=E69147111S).
 
-Para ver o projetp basta ir no link do site ao no final deste Readme ou baixar os arquivos e abrir o index.html
+Para ver o projeto basta baixar os arquivos e abrir o index.html.
 
 ## Table of contents
 
@@ -20,7 +20,4 @@ Para ver o projetp basta ir no link do site ao no final deste Readme ou baixar o
 
   Eu fiz a página com bastante paciência, levei um bom tempo fazendo um pouco por semana dado que esse projeto não tem uma proposta de prazo. Comecei pelo HTML para a versão de DESKTOP, seguida do css e depois o JavaScript. Nesse projeto, ao contrário de outros, eu utilizei px como unidade nos elementos ao invés de em ou rem para tentar chegar em uma aproximação mais fiel do layout mesmo que seja menos responsivo. O JS foi a parte mais desafiante do site, tive q fazer bastante alterações para chegar em um resultado que funcionasse bem o suficiente sem ser muito repetitivo.
 
-## Link
-
-  Site do projeto -
             
