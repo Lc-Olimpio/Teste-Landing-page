@@ -200,7 +200,7 @@ const fetchRequests = {
     moreProductsButton.onclick = function(e) {
       e.preventDefault()
 
-      fetch(`http://${dados}`)
+      fetch(`https://${dados}`)
       .then(fetchRequests.getJson)
       .then(fetchRequests.createProductWrapper)
       .then(fetchRequests.moreProducts)
