@@ -225,13 +225,14 @@ h1 {
   width: 100%;
   text-align: center;
 }
-.moreProducts a {
-  padding: 8px 25px;
+.moreProducts button {
+  padding: 8px 35px;
   border: 1px solid #707070;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
   color: #888888;
+  background-color: #fff;
 }
 
 /*THIRD SECTION*/
